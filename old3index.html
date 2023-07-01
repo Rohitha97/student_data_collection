@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Student information collection</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="student_data_collection/css/dashlite.css?ver=3.0.1">
+    <link id="skin-default" rel="stylesheet" href="student_data_collection/css/theme.css?ver=3.0.1">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+</head>
+
+<body class="nk-body bg-lighter npc-default has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between bg-white py-3">
+                                        <div class="nk-block-head-content">
+                                            <div>
+                                            <h3 class="nk-block-title page-title">Student Data Collection</h3>
+                                            </div>
+                                        </div><!-- .nk-block-head-content -->
+                                        <div class="nk-block-head-content row">
+                                            <div class="col-md-2">
+                                            <img src="./student_data_collection/images/logo.png" width="50px"/>
+                                            </div>
+                                            <div class="col-md-10">
+                                            <h3 class="nk-block-title page-title">St.Joseph International College, Milan</h3>
+                                            </div>
+                                        </div><!-- .nk-block-head-content -->
+
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
+                                <form method="post" action="" id="student_data">
+                                <div class="nk-block">
+                                    <div class="row g-gs">
+                                        <div class="nk-block nk-block-lg">
+                                            <div class="card card-preview">
+                                                <div class="card-inner">
+                                                    <div class="preview-block">
+                                                        <span class="preview-title-lg overline-title">Student Details</span>
+                                                        <div class="row gy-4">
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">Select Class <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select js-example-basic-single" data-ui="xl" id="grade">
+                                                                            <option value="">Select class</option>
+                                                                            <option value="pg">PLAY GROUP</option>
+                                                                            <option value="lkh">LKG</option>
+                                                                            <option value="ukg">UKG</option>
+                                                                            <option value="1">GRADE 1</option>
+                                                                            <option value="2">GRADE 2</option>
+                                                                            <option value="3">GRADE 3</option>
+                                                                            <option value="4">GRADE 4</option>
+                                                                            <option value="5">GRADE 5</option>
+                                                                            <option value="6">GRADE 6</option>
+                                                                            <option value="7">GRADE 7</option>
+                                                                            <option value="8">GRADE 8</option>
+                                                                            <option value="9">GRADE 9</option>
+                                                                            <option value="10">GRADE 10</option>
+                                                                            <option value="11">GRADE 11</option>
+                                                                            <option value="12">IGCSE</option>
+                                                                            <option value="13">AS</option>
+                                                                            <option value="14">AL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="first_name">Student first name <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="first_name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="last_name">Student last name <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="last_name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="complete_name">Student complete name (for the certificates) <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="complete_name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">Select gender <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select" data-ui="xl" id="">
+                                                                            <option value="default_option">Select Option</option>
+                                                                            <option value="option_select_name">Male</option>
+                                                                            <option value="option_select_name">Female</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <label class="form-label" for="outlined-date-picker">Date of birth <span class="text-danger">*</span></label>
+                                                                <div class="form-group">
+                                                                    <div class="form-control-wrap">
+                                                                        <div class="form-icon form-icon-right">
+                                                                            <em class="icon ni ni-calendar-alt"></em>
+                                                                        </div>
+                                                                        <input type="text" class="form-control date-picker" id="outlined-date-picker">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="birth_country">Birth country <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="birth_country">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="birth_place">Birth place <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="birth_place">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">Select religion <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select" data-ui="xl" id="">
+                                                                            <option value="default_option">Select Option</option>
+                                                                            <option value="option_select_name">Buddhist</option>
+                                                                            <option value="option_select_name">Roman Catholic</option>
+                                                                            <option value="option_select_name">Christian</option>
+                                                                            <option value="option_select_name">Islam</option>
+                                                                            <option value="option_select_name">Other</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="codice_fliscale">Student codice fiscale <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="codice_fliscale">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="student_passport">Student passport <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="student_passport">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="mobile_number">Student mobile number</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="mobile_number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="student_email">Student email <span class="text-danger">*</span></label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="student_email">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="previous_school">Previous school</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <input type="text" class="form-control" id="previous_school">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4 row mt-4">
+                                                                <label class="form-label">Do you have any siblings? <span class="text-danger">*</span></label>
+                                                                <div class="col-md-3 col-sm-6">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                                            <label class="custom-control-label" for="customRadio1">Yes</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-6">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input type="radio" id="customRadio2" name="customRadio" checked class="custom-control-input">
+                                                                            <label class="custom-control-label" for="customRadio2">No</label>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">If yes, how many sisters/ brothers do you have?</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select" data-ui="xl" id="">
+                                                                            <option value="default_option">Select</option>
+                                                                            <option value="option_select_name">1</option>
+                                                                            <option value="option_select_name">2</option>
+                                                                            <option value="option_select_name">3</option>
+                                                                            <option value="option_select_name">4</option>
+                                                                            <option value="option_select_name">5</option>
+                                                                            <option value="option_select_name">6</option>
+                                                                            <option value="option_select_name">7</option>
+                                                                            <option value="option_select_name">8</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 mt-3">
+                                                            <table class="table table-bordered" id="dynamicAddRemove">
+                                                                <tr>
+                                                                    <th>Student name</th>
+                                                                    <th>Mobile</th>
+                                                                    <th>Codice fiscale</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input type="text" name="addMoreInputFields[0][student]" placeholder="Enter name" class="form-control" />
+                                                                    </td>
+                                                                    <td><input type="text" name="addMoreInputFields[0][class]" placeholder="Enter class" class="form-control" />
+                                                                    </td>
+                                                                    <td><input type="text" name="addMoreInputFields[0][siblnig_codice_fiscale]" placeholder="Enter codice fiscale" class="form-control" />
+                                                                    </td>
+                                                                    <td><button type="button" name="add" id="dynamic-ar" class="btn btn-outline-primary">Add sibling</button></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="row mt-3" id="as" style='display:none;'>
+                                                            <h6 class="text-danger">As and A/L students must fill the following details.</h6>
+
+
+                                                            <div class="col-sm-4 row mt-4">
+                                                                <label class="form-label">Select your grade(s) <span class="text-danger">*</span></label>
+                                                                <div class="col-md-3 col-sm-6">
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" onclick="myFunction1()">
+                                                                        <label class="custom-control-label" for="customCheck1">AL</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <div class="col-sm-4 mt-3" id="al_subject_count" style='display:none;'>
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="">No of subjects you attend</label>
+                                                                <div class="form-control-wrap">
+                                                                    <select class="form-select" data-ui="xl" id="">
+                                                                        <option value="option_select_name">Select</option>
+                                                                        <option value="option_select_name">3</option>
+                                                                        <option value="option_select_name">4</option>
+                                                                        <option value="option_select_name">5</option>
+                                                                        <option value="option_select_name">6</option>
+                                                                        <option value="option_select_name">more</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 mt-3" id="al_subject" style='display:none;'>
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="">choose subjcts</label>
+                                                                <div class="form-control-wrap">
+                                                                    <select class="js-example-basic-multiple form-select" name="states[]" multiple="multiple" data-ui="xl" id="">
+                                                                        <option value="option_select_name">Select</option>
+                                                                        <option value="option_select_name">Maths</option>
+                                                                        <option value="option_select_name">Physics</option>
+                                                                        <option value="option_select_name">IT</option>
+                                                                        <option value="option_select_name">Chemistry</option>
+                                                                        <option value="option_select_name">Biology</option>
+                                                                        <option value="option_select_name">Accounting</option>
+                                                                        <option value="option_select_name">Business Studies</option>
+                                                                        <option value="option_select_name">Psychology</option>
+                                                                        <option value="option_select_name">English</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="row mt-3" id="al" style='display:none;'>
+                                                            <div class="col-sm-4 row mt-4">
+                                                                <div class="col-md-3 col-sm-6">
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="customCheck2" onclick="myFunction2()">
+                                                                        <label class="custom-control-label" for="customCheck2">AS</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4 mt-3" id="as_subject_count" style='display:none;'>
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">No of subjects you attend</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select" data-ui="xl" id="">
+                                                                            <option value="option_select_name">Select</option>
+                                                                            <option value="option_select_name">3</option>
+                                                                            <option value="option_select_name">4</option>
+                                                                            <option value="option_select_name">5</option>
+                                                                            <option value="option_select_name">6</option>
+                                                                            <option value="option_select_name">more</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4 mt-3" id="as_subject" style='display:none;'>
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">choose subjcts</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="js-example-basic-multiple form-select" name="states[]" multiple="multiple" data-ui="xl" id="">
+                                                                            <option value="option_select_name">Select</option>
+                                                                            <option value="option_select_name">Maths</option>
+                                                                            <option value="option_select_name">Physics</option>
+                                                                            <option value="option_select_name">IT</option>
+                                                                            <option value="option_select_name">Chemistry</option>
+                                                                            <option value="option_select_name">Biology</option>
+                                                                            <option value="option_select_name">Accounting</option>
+                                                                            <option value="option_select_name">Business Studies</option>
+                                                                            <option value="option_select_name">Psychology</option>
+                                                                            <option value="option_select_name">English</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="preview-hr">
+                                                        <span class="preview-title-lg overline-title">Parent details</span>
+                                                        <div class="row gy-4">
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-01">Father's name</label>
+                                                                    <input type="text" class="form-control" id="default-1-01" placeholder="Father name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="father_phone">Father's phone</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="father_phone" placeholder="Father phone">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Father's whatsapp no</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="father_whtsapp" placeholder="Father whatsapp no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Father's viber No</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="father_viber" placeholder="Father viber no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Father's occupation</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Father occupation">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Father's codice fiscale</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Father's codice fiscale">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Father's passport no </label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Father's passport No">
+                                                                </div>
+                                                            </div>
+                                                            <hr class="preview-hr">
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-01">Mother's name</label>
+                                                                    <input type="text" class="form-control" id="default-1-01" placeholder="Mother's Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Mother's phone </label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="mother_phone" placeholder="Mother's phone">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Mother's whatsapp No</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="mother_whtsapp" placeholder="Mother's whatsapp no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Mother's viber no</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="mother_viber" placeholder="Mother's viber no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <label class="form-label" for="default-1-02">Mother's occupation</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Mother's occupation">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Mothers's codice fiscale</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Mothers's codice fiscale">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Mothers's passport no</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Mothers's passport no">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="preview-hr">
+                                                        <div>
+                                                            <h6 class="text-danger">Even if the guardian is the mother / father, please kindly add relevant details again.</h6>
+                                                        </div>
+                                                        <div class="row gy-4 mt-3">
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="">Relationship to guardian</label>
+                                                                    <div class="form-control-wrap">
+                                                                        <select class="form-select" data-ui="xl" id="">
+                                                                            <option value="option_select_name">Select</option>
+                                                                            <option value="option_select_name">Parents</option>
+                                                                            <option value="option_select_name">Blood relationship</option>
+                                                                            <option value="option_select_name">Legal</option>
+                                                                            <option value="option_select_name">Other</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-01">Guardian's name <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control" id="default-1-01" placeholder="Guardian name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Guardian's phone <span class="text-danger">*</span></label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="guardian_phone" placeholder="Guardian name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Guardian's whatsapp no <span class="text-danger">*</span></label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="guardian_whtsapp" placeholder="Guardian whatsapp no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <label class="form-label" for="default-1-02">Guardian's viber no <span class="text-danger">*</span></label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" id="guardian_viber" placeholder="Guardian viber no">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Guardian's occupation <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Guardian occupation">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Guardian's codice fiscale <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Guardian's codice fiscale">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-1-02">Guardian's email <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Guardian's email">
+                                                                </div>
+                                                            </div>
+                                                            <div class=" row col-sm-12 mt-3">
+                                                                <label class="form-label" for="default-1-02">Guardian's permenent address <span class="text-danger">*</span></label>
+                                                                <div class="col-sm-3 form-group">
+                                                                    <label class="form-label" for="default-1-02">Via</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Via">
+                                                                </div>
+                                                                <div class="col-sm-3 form-group">
+                                                                    <label class="form-label" for="default-1-02">No</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="No">
+                                                                </div>
+                                                                <div class="col-sm-3 form-group">
+                                                                    <label class="form-label" for="default-1-02">City</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="City">
+                                                                </div>
+                                                                <div class="col-sm-3 form-group">
+                                                                    <label class="form-label" for="default-1-02">Postal Code</label>
+                                                                    <input type="text" class="form-control" id="default-1-02" placeholder="Postal code">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .card-preview -->
+
+                                            </div><!-- .code-block -->
+                                        </div><!-- .nk-block -->
+                                    </div><!-- .row -->
+                                </form>
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap">
+                            <div class="nk-footer-copyright"> &copy; 2022 Dbeeta Web Solutions.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- select region modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="region">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="title mb-4">Select Your Country</h5>
+                    <div class="nk-country-region">
+                        <ul class="country-list text-center gy-2">
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/arg.png" alt="" class="country-flag">
+                                    <span class="country-name">Argentina</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/aus.png" alt="" class="country-flag">
+                                    <span class="country-name">Australia</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/bangladesh.png" alt="" class="country-flag">
+                                    <span class="country-name">Bangladesh</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/canada.png" alt="" class="country-flag">
+                                    <span class="country-name">Canada <small>(English)</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/china.png" alt="" class="country-flag">
+                                    <span class="country-name">Centrafricaine</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/china.png" alt="" class="country-flag">
+                                    <span class="country-name">China</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/french.png" alt="" class="country-flag">
+                                    <span class="country-name">France</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/germany.png" alt="" class="country-flag">
+                                    <span class="country-name">Germany</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/iran.png" alt="" class="country-flag">
+                                    <span class="country-name">Iran</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/italy.png" alt="" class="country-flag">
+                                    <span class="country-name">Italy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/mexico.png" alt="" class="country-flag">
+                                    <span class="country-name">México</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/philipine.png" alt="" class="country-flag">
+                                    <span class="country-name">Philippines</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/portugal.png" alt="" class="country-flag">
+                                    <span class="country-name">Portugal</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/s-africa.png" alt="" class="country-flag">
+                                    <span class="country-name">South Africa</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/spanish.png" alt="" class="country-flag">
+                                    <span class="country-name">Spain</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/switzerland.png" alt="" class="country-flag">
+                                    <span class="country-name">Switzerland</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/uk.png" alt="" class="country-flag">
+                                    <span class="country-name">United Kingdom</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="country-item">
+                                    <img src="./images/flags/english.png" alt="" class="country-flag">
+                                    <span class="country-name">United State</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modla-dialog -->
+    </div><!-- .modal -->
+    <!-- JavaScript -->
+    <script src="student_data_collection/js/bundle.js?ver=3.0.1"></script>
+    <script src="student_data_collection/js/scripts.js?ver=3.0.1"></script>
+    <script src="school/js/charts/chart-ecommerce.js?ver=3.0.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        function myFunction1() {
+            var checkBox = document.getElementById("customCheck1");
+            var al_subject = document.getElementById("al_subject");
+            var al_subject_count = document.getElementById("al_subject_count");
+
+            if (checkBox.checked == true){
+                al_subject.style.display = "block";
+                al_subject_count.style.display = "block";
+            } else {
+                al_subject.style.display = "none";
+                al_subject_count.style.display = "none";
+            }
+        }
+
+        function myFunction2() {
+            var checkBox = document.getElementById("customCheck2");
+            var as_subject = document.getElementById("as_subject");
+            var as_subject_count = document.getElementById("as_subject_count");
+
+            if (checkBox.checked == true){
+                as_subject.style.display = "block";
+                as_subject_count.style.display = "block";
+            } else {
+                as_subject.style.display = "none";
+                as_subject_count.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).on("change", "#grade", function(e) {
+            e.preventDefault();
+            if ($(this).val() == 13 || $(this).val() == 14) {
+                $("#as").show();
+                $("#al").show();
+            } else {
+                $("#as").hide();
+                $("#al").hide();
+            }
+        })
+    </script>
+    <script>
+        function validate() {
+
+            //window.alert('clicked');
+
+            if( document.student_data.first_name.value == "" ) {
+                document.getElementById('une').innerHTML = "Please provide Origin Location!";
+                document.flight.originLocationCode.focus() ;
+                return false;
+            }
+
+            if( document.flight.destinationLocationCode.value == "-1" ) {
+                document.getElementById('une').innerHTML = "Please provide Destination Location!";
+                document.flight.destinationLocationCode.focus() ;
+                return false;
+            }
+
+            if( document.flight.adults.value == "-1" ) {
+                document.getElementById('une').innerHTML = "Please add one or more adult(s)!";
+                document.flight.adults.focus() ;
+                return false;
+            }
+
+            if( document.flight.departureDate.value == "" ) {
+                document.getElementById('une').innerHTML = "Depature Date should not be an empty";
+                document.flight.departureDate.focus() ;
+                return false;
+            }
+
+            if( (document.flight.returnDate.value == "") && (document.flight.flight_type.value == "1")) {
+                document.getElementById('une').innerHTML = "Return Date should not be an empty";
+                document.flight.returnDate.focus() ;
+                return false;
+            }
+
+
+            return( true );
+        }
+    </script>
+    <script>
+        var input = document.querySelector("#father_phone");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#father_whtsapp");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#father_viber");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#mother_phone");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#mother_whtsapp");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#mother_viber");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#guardian_phone");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#guardian_whtsapp");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        var input = document.querySelector("#guardian_viber");
+
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["it", "jp", "pk", "no"]
+        });
+    </script>
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+    <script type="text/javascript">
+        var i = 0;
+        $("#dynamic-ar").click(function () {
+            ++i;
+            $("#dynamicAddRemove").append('<tr><td><input type="text" name="addMoreInputFields[' + i +
+                '][suspect]" placeholder="Enter Name" class="form-control" /></td><td><input type="text" name="addMoreInputFields[' + i +
+                '][mobile]" placeholder="Enter Mobile" class="form-control" /></td><td><input type="text" name="addMoreInputFields[' + i +
+                '][siblnig_codice_fiscale]" placeholder="Enter Codice Fiscale" class="form-control" /></td><td><button type="button" class="btn btn-outline-danger remove-input-field">Delete</button></td></tr>'
+            );
+        });
+        $(document).on('click', '.remove-input-field', function () {
+            $(this).parents('tr').remove();
+        });
+    </script>
+</body>
+
+</html>
